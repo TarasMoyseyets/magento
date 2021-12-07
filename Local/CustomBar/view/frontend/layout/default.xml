@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+            <block class="Local\CustomBar\Controller\Index\DisplayCustomBar"
+                   name="local_custombar"
+                   template="Local_CustomBar::customBar.phtml" ifconfig="section_bar/group_custom_bar/custom_bar_id"/>
+        </referenceContainer>
+    </body>
+</page>
